@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en" data-framework="backbonejs">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>BackboneJs Assignment</title>		
+	</head>
+	<style>
+
+	
+	</style>
+	<body>
+		<div id="myDiv" style="width: 20%; position:absolute; border-right: solid 1px lightgray;">
+            <input type="text" id="newName">
+            <button id="changeNameButton">Change Name</button>
+            <div id="myDiv2"></div>
+		</div>
+        <div id="animalDiv" style="width: 40%; margin-left: 20%; position:absolute; border-right: solid 1px lightgray; padding-left: 10px;">
+		</div>
+        <div id="birdDiv" style="margin-left: 60%; position:absolute; padding-left: 20px;">
+		</div>
+        <script type="text/template" id="myDivContent">
+		  <p>My name is : <span id="nameContent"><%=name%></span></p>
+		</script>
+        <script type="text/template" id="animalDivContent">
+          <p>Animal is : <span id="animalContent"><%=name %></span></p>
+          <p>Animal type is : <span id="animalTypeContent"><%=type %></span></p>
+        </script>
+        <script type="text/template" id="birdDivContent">
+          <p>Bird is : <span id="birdContent"><b><%=name %></b></span>
+          and Bird type is : <span id="birdTypeContent"><b><%=type %></b></span></p>
+        </script>
+        
+		<script src="lib/jquery/jquery.js"></script>
+        <script src="lib/underscore/underscore.js"></script>
+        <script src="lib/backbone/backbone.js"></script>
+		
+        <script src="js/models/myModel.js"></script>
+        <script src="js/views/myView.js"></script>		
+        
+        <script src="js/models/animalModel.js"></script>
+        <script src="js/views/animalView.js"></script>
+        
+        <script src="js/models/birdModel.js"></script>
+        <script src="js/collections/birdCollection.js"></script>
+        <script src="js/views/birdView.js"></script>
+        <script src="js/views/birdCollectionView.js"></script>
+    </body>
+</html>
